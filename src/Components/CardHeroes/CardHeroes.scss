@@ -1,0 +1,53 @@
+.CardHeroesMainContainer{
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    margin: 1%;
+    border-radius: 10px;
+    background-color: #ffff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+    &:hover{
+        transform: scale(1.02);
+    }
+    .PhotoContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .FirstContainer{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        .LeftContainer{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+
+        }
+        .RightContainer{
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            align-items: center;
+            justify-content: center;
+            .btnDescription{
+                background-color: #74cede;
+                border-radius: 50%;
+                border: none;
+                cursor: pointer;
+                transition: all 0.15s 0s ease-out;
+                &:hover{
+                    background-color: #ff6666;
+                    color: white;
+                }
+                .imgArrow{
+                    width: 90%;
+                    height: 80%;
+                }
+               
+            }
+
+        }
+
+    }
+
+}

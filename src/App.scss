@@ -1,0 +1,28 @@
+.App{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  .HeaderContainer{
+    display: flex;
+    width: 100%;
+    background-color: #ffff;
+
+  }
+  .ContentContainer{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    .FilterContainer{
+      display: flex;
+      width: 25%;
+      background-color: #ffff;
+    }
+    .CardsContainer{
+      display: flex;
+      flex-wrap: wrap;
+      width: 75%;
+      flex-direction: row;
+    }
+  }
+}

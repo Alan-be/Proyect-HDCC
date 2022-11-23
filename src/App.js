@@ -1,23 +1,61 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import { CardHeroes } from './Components/CardHeroes/CardHeroes';
+import { useEffect, useState } from 'react';
+import SearchBar from './Components/SearchBar/SearchBar';
+
+
+//https://gateway.marvel.com:443/v1/public/characters?ts=1apikey=65ec9ee4da9b3e7422fb540e63a19c57&hash=ce2e743870c3bef4cd5105a8f4e2ec2a
+
 
 function App() {
+  const url = 'https://gateway.marvel.com:443/v1/public/characters?ts=1&apikey=65ec9ee4da9b3e7422fb540e63a19c57&hash=ce2e743870c3bef4cd5105a8f4e2ec2a';
+
+  const [copy, setCopy] = useState([]);
+
+  const fetchApi = async () => {
+    const response = await fetch(url);
+    const responseJSON = await response.json();
+    console.log(responseJSON.data.results);
+    setCopy(responseJSON.data.results);
+
+  }
+
+  useEffect(() => {
+    fetchApi();
+
+  }, []);
+
+
+  console.log(copy);
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='HeaderContainer'>
+        <h2>Aqui el header</h2>
+        <SearchBar />
+
+      </div>
+      <div className='ContentContainer'>
+        <div className='FilterContainer'>
+          <h2>Aqui va el filtro</h2>
+
+        </div>
+
+        <div className='CardsContainer'>
+          {copy.map((item) => (
+            <CardHeroes
+              name={item.name}
+              id={item.id}
+              img={`${item.thumbnail.path}.${item.thumbnail.extension}`}
+              description={item.description}
+            />
+
+          ))}
+        </div>
+      </div>
+
     </div>
   );
 }
