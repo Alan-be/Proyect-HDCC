@@ -1,265 +1,49 @@
-.footerMain {
+.FooterMainContainer{
     display: flex;
-    flex-direction: column;
-    flex: 1;
-    border-top: 1px solid #eaeaea;
-    background-color: #282B4c;
-    color:white;
-    height:"5%";
-    .footerSocialMedia{
-        padding: 10px 140px 0px 130px;
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
-        .footerBanner div{
-            padding: 28px 0px 15px 0px;
-            .socialMedia{
-                display: flex;
-                flex-direction: column;
-                
-            }
-            .iconosRedes{
-                margin:0px 50px 0px 10px;
-            }
-
-        
-
-            .TerminosCondiciones{
-              
-            }
-            .links{
-                margin-right: 10px;
-              }
-          }
-          .footerBanner :nth-child(2) a{
-            margin-left: 20px;
-            margin-right: 65px;
-          }
-          .footerBanner :nth-child(2) a:hover{
-            color:#E85D0C;
-            transform: scale(0.25,0.25);
-          }
-          .footerBanner :nth-child(3) a{
-            margin-right: 60px;
-            width: 237px;
-            padding-right: 5%
-          }
-          .footerBanner :nth-child(3) a:hover{
-            border-bottom: 1px solid #E85D0C;
-          }
-          
-          
-          .logoEntry{
-            .logo{
-                width: 50%;
-              }
-          }
-          
-          
-          
-    }
-    .copyright {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-grow: 1;
-        color: white;
-        border-top: 1px solid #eaeaea;
-        padding: 0rem 0px 2rem 0px;
-      }
-    
-
-      
-
-      
-  }
-
-@media all and (max-width: 480px) {
-  .footerMain {
-    display: flex;
-    flex-direction: column;
-    border-top: 1px solid #eaeaea;
-    background-color: #282B4c;
-    color:white;
-    height:"5%";
-    .footerSocialMedia{
-        padding: 0px 0px 0px 0px !important;
-        /* padding: 10px 140px 0px 130px !important; */
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
-        .footerBanner div{
-            padding: 28px 0px 15px 0px;
-            .socialMedia{
-                display: flex;
-                flex-direction: column;
-                
-            }
-            .iconosRedes{
-                /* margin:0px 50px 0px 10px; */
-                /* Arriba | Derecha | Abajo | Izquierda */
-                margin:0px 10px 0px 10px;
-                width: 2rem;
-            }
-          }
-          .TerminosCondiciones{
-            display:flex !important;
-            flex-direction: column-reverse;
-            margin: 0px 10px 10px 10px;
-            .terminosCondicionesText{
-               margin-left: 15px;
-               font-size: 15px;
-            }
-            .avisoPrivacidadText{
-                margin-left: 15px;
-                margin-bottom: 15px;
-                font-size: 15px;
-            }
-          }
-          .links{
-            display: none !important;
-            margin-right: 10px;
-          }
-          .footerBanner :nth-child(2) a{
-            margin-left: 20px;
-            margin-right: 65px;
-          }
-          .footerBanner :nth-child(2) a:hover{
-            color:#E85D0C;
-            transform: scale(0.25,0.25);
-          }
-          .footerBanner :nth-child(3) a{
-            margin-right: 60px;
-            width: 237px;
-            padding-right: 5%
-          }
-          .footerBanner :nth-child(3) a:hover{
-            border-bottom: 1px solid #E85D0C;
-          }
-          
-          
-          .logoEntry{
-            /* Arriba | Derecha | Abajo | Izquierda */
-            margin: 20px 10px 0 0px ;
-            .logo{
-                width: 50%;
-              }
-          }
-          
-          
-          
-    }
-    .copyright {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-grow: 1;
-        color: white;
-        border-top: 1px solid #eaeaea;
-        padding: 1rem;
-        .copytext{
-            font-size: 15px;
-            align-items: center;
-        }
-      }
-    
-
-      
-
-      
-  }
-  
-  
-  
-}
-  
-@media (max-width: 768px) {
-    .footerMain {
+    flex-direction: row;
+    background-color: rgb(44, 60, 92);
+    width: 100%;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 3%;
+    .LeftFooterContainer{
         display: flex;
         flex-direction: column;
-        border-top: 1px solid #eaeaea;
-        background-color: #282B4c;
-        color:white;
-        height:"5%";
-        .footerSocialMedia{
-            padding: 0px 0px 0px 0px !important;
-            /* padding: 10px 140px 0px 130px !important; */
-            display:flex;
-            flex-direction: row;
-            justify-content: space-between;
-            .footerBanner div{
-                padding: 28px 0px 15px 0px;
-                .socialMedia{
-                    display: flex;
-                    flex-direction: column;
-                    
-                }
-                .iconosRedes{
-                    /* margin:0px 50px 0px 10px; */
-                    /* Arriba | Derecha | Abajo | Izquierda */
-                    margin:0px 10px 0px 10px;
-                    width: 2rem;
-                }
-              }
-              .TerminosCondiciones{
-                display:flex !important;
-                flex-direction: column-reverse;
-                margin: 0px 10px 10px 10px;
-                .terminosCondicionesText{
-                   margin-left: 15px;
-                   font-size: 15px;
-                }
-                .avisoPrivacidadText{
-                    margin-left: 15px;
-                    margin-bottom: 15px;
-                    font-size: 15px;
-                }
-              }
-              .links{
-                display: none !important;
-                margin-right: 10px;
-              }
-              .footerBanner :nth-child(2) a{
-                margin-left: 20px;
-                margin-right: 65px;
-              }
-              .footerBanner :nth-child(2) a:hover{
-                color:#E85D0C;
-                transform: scale(0.25,0.25);
-              }
-              .footerBanner :nth-child(3) a{
-                margin-right: 60px;
-                width: 237px;
-                padding-right: 5%
-              }
-              .footerBanner :nth-child(3) a:hover{
-                border-bottom: 1px solid #E85D0C;
-              }
-              
-              
-              .logoEntry{
-                /* Arriba | Derecha | Abajo | Izquierda */
-                margin: 20px 10px 0 0px ;
-                .logo{
-                    width: 50%;
-                  }
-              }
-              
-              
-              
+        width: 33.3%;
+        align-items: center;
+        h2{
+            margin: 5px;
         }
-        .copyright {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-grow: 1;
+        p{
+            margin: 5px;
+        }
+
+    }
+    .CenterFooterContainer{
+        display: flex;
+        flex-direction: column;
+        width: 33.3%;
+        align-items: center;
+        h2{
+            margin: 5px;
+        }
+        a{
+            margin: 5px;
             color: white;
-            border-top: 1px solid #eaeaea;
-            padding: 1rem;
-            .copytext{
-                font-size: 15px;
-                align-items: center;
-            }
-          }   
-      }
+        }
+    }
+    .RightFooterContainer{
+        display: flex;
+        flex-direction: column;
+        width: 33.3%;
+        align-items: center;
+        h2{
+            margin: 5px;
+        }
+        a{
+            margin: 5px;
+            color: white;
+        }
+
+    }
 }
