@@ -39,7 +39,7 @@ function ResponsiveAppBar() {
     <AppBar position="static" style={{backgroundColor:"rgb(44,60,92)"}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <img src={LogoUniva} width="10%" style={{marginRight:"1rem"}}/>
+          <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/4a/54/3c/4a543c29-6b14-d0ae-6508-78e9c436c6a4/source/512x512bb.jpg" width="10%" style={{marginRight:"1rem"}}/>
           <Typography
             variant="h6"
             noWrap

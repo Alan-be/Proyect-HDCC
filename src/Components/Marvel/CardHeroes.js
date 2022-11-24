@@ -10,31 +10,34 @@ import { useState } from 'react';
 const CardHeroes = ({ data }) => {
     console.log(data, "hola");
     return (
-        <div className='GridCards'>
-            {data.map((item) => (
-                <Card sx={{ maxWidth: 345 }} className='CardsContainer'>
-                    <CardMedia
-                        component="img"
-                        height="140"
-                        image={`${item.thumbnail.path}.${item.thumbnail.extension}`}
-                        alt="green iguana"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="div">
-                            {item.name}
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                            {item.description}
-                        </Typography>
-                    </CardContent>
-                    <CardActions>
-                        <Typography variant="body2" color="text.secondary"> ID: {item.id}</Typography>
-                        <Typography variant="body2" color="text.secondary"> Comics: {item.comics.available}</Typography>
-                    </CardActions>
-                </Card>
+        <div className='containerCardsGrid'>
+            <div className='GridCards'>
+                        {data.map((item) => (
+                            <Card sx={{ maxWidth: 345 }} className='CardsContainer'>
+                                <CardMedia
+                                    component="img"
+                                    height="140"
+                                    image={`${item.thumbnail.path}.${item.thumbnail.extension}`}
+                                    alt="green iguana"
+                                />
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="div">
+                                        {item.name}
+                                    </Typography>
+                                    <Typography variant="body2" color="text.secondary">
+                                        {item.description}
+                                    </Typography>
+                                </CardContent>
+                                <CardActions>
+                                    <Typography variant="body2" color="text.secondary"> ID: {item.id}</Typography>
+                                    <Typography variant="body2" color="text.secondary"> Comics: {item.comics.available}</Typography>
+                                </CardActions>
+                            </Card>
 
-            ))}
+                        ))}
+            </div>
         </div>
+       
     );
 }
 export default CardHeroes;

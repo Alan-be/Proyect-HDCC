@@ -25,8 +25,22 @@
       flex-direction: row;
     }
   }
-  .GridCards{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  .containerCardsGrid{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    .GridCards{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      
+      padding: 0 1.5rem;
+      grid-column-gap: 10rem;
+      grid-row-gap: 2rem;
+      .CardsContainer{
+        box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+
+      }
+    }
   }
+  
 }
