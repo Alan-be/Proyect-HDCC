@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component }  from 'react';
 const Card = ({ pokemon, loading,infoPokemon}) => {
    // console.log(pokemon);
     return (
