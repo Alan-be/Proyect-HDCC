@@ -22,6 +22,8 @@ export const MainHeroes = () => {
   }, []);
 
   return (
-    <CardHeroes />
+    <CardHeroes
+      data={copy}
+    />
   )
 }
