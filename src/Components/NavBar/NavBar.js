@@ -13,7 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import LogoUniva from '../../assets/images/univaLogo.jpeg'
-const pages = ['Products', 'Pricing', 'Blog'];
+const pages = ['Pokedex', 'Marvel', 'GoogleMaps'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
@@ -111,7 +111,7 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-            HOLA
+            
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
