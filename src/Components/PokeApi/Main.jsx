@@ -4,6 +4,7 @@ import Pokeinfo from "./Pokeinfo";
 import axios from "axios";
 import { useState } from "react";
 import { useEffect } from "react";
+import PokemonLogo from '../../assets/images/logoPokemon.png'
 const Main=()=>{
     const [pokeData,setPokeData]=useState([]);
     const [loading,setLoading]=useState(true);
@@ -35,6 +36,9 @@ const Main=()=>{
     },[url])
     return(
         <>
+            <div style={{display:"flex",alignItems:"center",alignContent:"center", width:"100%",justifyContent: "center"}}>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png" width="30%"/>
+            </div>
             <div className="container">
                 <div className="left-content">
                     <Card pokemon={pokeData} loading={loading} infoPokemon={poke=>setPokeDex(poke)}/>
