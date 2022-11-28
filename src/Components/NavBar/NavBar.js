@@ -41,64 +41,69 @@ function ResponsiveAppBar() {
   return (
     <AppBar position="static" style={{backgroundColor:"rgb(44,60,92)"}}>
       <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/4a/54/3c/4a543c29-6b14-d0ae-6508-78e9c436c6a4/source/512x512bb.jpg" width="10%" style={{marginRight:"1rem"}}/>
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/Pokedex"
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 100,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            Pokedex
-          </Typography>
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/Pokedex"
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 100,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            Marvel
-          </Typography>
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/Maps"
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 100,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            GoogleMaps
-          </Typography>
+        <div style={{display:"flex", flexDirection:"row", width:"100%", justifyContent:" space-around"}}>
+          <Toolbar disableGutters>
+            <div style={{display:"flex", flexDirection:"row", width:"50%"}}>
+              <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/4a/54/3c/4a543c29-6b14-d0ae-6508-78e9c436c6a4/source/512x512bb.jpg" width="30%" style={{marginRight:"1rem"}}/>
+            </div>
+            <div style={{display:"flex", flexDirection:"row", width:"50%"}}>
 
-
-          
-          
-        </Toolbar>
+              <Typography
+                variant="h6"
+                noWrap
+                component="a"
+                href="#Pokemon"
+                sx={{
+                  mr: 2,
+                  display: { xs: 'none', md: 'flex' },
+                  fontFamily: 'monospace',
+                  fontWeight: 100,
+                  letterSpacing: '.3rem',
+                  color: 'inherit',
+                  textDecoration: 'none',
+                }}
+              >
+                Pokedex
+              </Typography>
+              <Typography
+                variant="h6"
+                noWrap
+                component="a"
+                href="#Marvel"
+                sx={{
+                  mr: 2,
+                  display: { xs: 'none', md: 'flex' },
+                  fontFamily: 'monospace',
+                  fontWeight: 100,
+                  letterSpacing: '.3rem',
+                  color: 'inherit',
+                  textDecoration: 'none',
+                }}
+              >
+                Marvel
+              </Typography>
+              <Typography
+                variant="h6"
+                noWrap
+                component="a"
+                href="#Maps"
+                sx={{
+                  mr: 2,
+                  display: { xs: 'none', md: 'flex' },
+                  fontFamily: 'monospace',
+                  fontWeight: 100,
+                  letterSpacing: '.3rem',
+                  color: 'inherit',
+                  textDecoration: 'none',
+                }}
+              >
+                GoogleMaps
+              </Typography>
+            </div>
+            
+          </Toolbar>
+        </div>
+        
       </Container>
     </AppBar>
   );
