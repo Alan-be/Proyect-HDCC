@@ -36,7 +36,7 @@ const Main=()=>{
     },[url])
     return(
         <>
-            <div style={{display:"flex",alignItems:"center",alignContent:"center", width:"100%",justifyContent: "center"}}>
+            <div style={{display:"flex",alignItems:"center",alignContent:"center", width:"100%",justifyContent: "center", marginTop:"5rem"}} id="Pokemon">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png" width="30%"/>
             </div>
             <div className="container">
